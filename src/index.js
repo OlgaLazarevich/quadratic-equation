@@ -13,7 +13,11 @@ module.exports = function solveEquation(equation) {
     var first = (-(b) + Math.sqrt(d)) / (2 * a);
     var second = (-(b) - Math.sqrt(d)) / (2 * a);
 
-    let solutions = [first, second];
+    let solutions = []
+
+    if (first < second) {
+        solutions = [first, second];
+    } else { solutions = [second, first]; }
 
 
 
