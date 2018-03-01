@@ -10,8 +10,8 @@ module.exports = function solveEquation(equation) {
 
     var d = Math.pow(b, 2) - 4 * a * c;
 
-    var first = (-(b) + Math.sqrt(d)) / (2 * a);
-    var second = (-(b) - Math.sqrt(d)) / (2 * a);
+    var first = Math.fround((-(b) + Math.sqrt(d)) / (2 * a));
+    var second = Math.fround((-(b) - Math.sqrt(d)) / (2 * a));
 
     let solutions = []
 
